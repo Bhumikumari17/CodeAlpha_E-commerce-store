@@ -9,7 +9,7 @@ if (loginForm) {
         const password = document.getElementById("password").value;
 
         try {
-            const response = await fetch("http://localhost:5000/login", {
+            const response = await fetch("https://codealpha-e-commerce-store-he6e.onrender.com/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -39,7 +39,7 @@ if (signupForm) {
         const password = document.getElementById("password").value;
 
         try {
-            const response = await fetch("http://localhost:5000/signup", {
+            const response = await fetch("https://codealpha-e-commerce-store-he6e.onrender.com/signup", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -284,7 +284,7 @@ if (checkoutBtn) {
 
         try {
 
-            const response = await fetch("http://localhost:5000/order", {
+            const response = await fetch("https://codealpha-e-commerce-store-he6e.onrender.com/order", {
 
                 method: "POST",
 
