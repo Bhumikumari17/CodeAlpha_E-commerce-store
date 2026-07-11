@@ -21,7 +21,7 @@ if (loginForm) {
 
             if (data.message === "Login Successful ✅") {
                 alert(data.message);
-                window.location.href = "product.html";
+                window.location.href = "./product.html";
             } else {
                 alert(data.message);
             }
