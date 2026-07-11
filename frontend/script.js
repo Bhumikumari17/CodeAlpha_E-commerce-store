@@ -18,7 +18,13 @@ if (loginForm) {
             });
 
             const data = await response.json();
-            alert(data.message);
+
+            if (data.message === "Login Successful ✅") {
+                alert(data.message);
+                window.location.href = "product.html";
+            } else {
+                alert(data.message);
+            }
 
         } catch (error) {
             alert("Server connection failed!");
